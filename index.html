@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Language Learning App</title>
+    <link rel="shortcut icon" href="google-translate.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div id="card-container">
+            <div class="card" id="word-card"></div>
+            <input type="text" id="translation-input" placeholder="Введіть переклад">
+            <button id="check-btn">Перевірити</button>
+        </div>
+        <div id="stats">
+            <p>Крок: <span id="step-counter">0</span>/<span id="total-steps">10</span></p>
+            <p>Вірно: <span id="correct-counter">0</span></p>
+            <p>Невірно: <span id="incorrect-counter">0</span></p>
+        </div>
+    </div>
+    <div id="modal" class="hidden">
+        <p id="result"></p>
+        <button id="restart-btn">Розпочати знову</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
